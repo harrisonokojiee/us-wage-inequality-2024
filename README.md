@@ -28,6 +28,8 @@ The U.S. employs over 150 million workers across hundreds of occupations — but
 | Top & Bottom 20 Occupations | Highest and lowest paying jobs by median annual wage |
 | Wage Spread by Occupation | 10th vs 90th percentile gap within individual occupations |
 | National Wage Distribution | Histogram of median wages across all 818 occupations |
+| Wage Concentration Curve | Employment-weighted cumulative wage bill share across workers |
+| Predicted vs Actual Median Wage | Linear-model baseline prediction using 10th and 90th percentiles |
 
 ---
 
@@ -50,8 +52,23 @@ U.S. Bureau of Labor Statistics — [Occupational Employment and Wage Statistics
 
 1. Clone this repository
 2. Download the OEWS national dataset from the BLS link above
-3. Open the notebook in Google Colab
-4. Upload the `.xlsx` file and run all cells top to bottom
+3. Install dependencies:
+   ```bash
+   pip install pandas numpy matplotlib seaborn openpyxl
+   ```
+4. Open the notebook in Google Colab or Jupyter
+5. Place/upload `all_data_M_2024.xlsx` in the same working directory as the notebook
+6. Run all cells top to bottom
+
+### Output Files
+
+Running the notebook generates:
+
+- `chart1_top_bottom_wages.png`
+- `chart2_wage_spread.png`
+- `chart3_wage_distribution.png`
+- `chart4_wage_concentration_curve.png`
+- `chart5_predicted_vs_actual.png`
 
 ---
 
